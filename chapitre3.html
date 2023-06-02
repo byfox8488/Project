@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="chap3.css">
+    <script src="chap3.js"></script>
+  </head>
+  <body onload="none()">
+    <span id="introduction">
+      <h1>Chapitre 3 : Les Structures  répétitives </h1>
+    </span>
+    <section id="progress">
+      <a href="index3.html">L'accueil </a>===><a href="chapitre3.html"> Chapitre 3 </a>
+    </section>
+    <nav>
+      <span id="navig">
+        <input type="button" value="Cours" id="btcour" onclick="display2()">
+        <input type="button" value="App et Quiz" id="btquiz" onclick="display()">
+        <span id="line"></span>
+      </span>
+    </nav>
+    <span id="cour">
+      <ol>
+        <li><h1>Introduction:</h1></li>
+        <p id="intro">
+          Prenons d’une saisie au clavier, par exemple, on pose une question à laquelle doit répondre par « oui » ou « non ». 
+          L’utilisateur risque de taper autre chose (une autre lettre), <br> le programme peut soit planter par une erreur d’exécution soit dérouler normalement jusqu’au bout, mais en produisant des résultats fantaisistes.
+          Pour éviter ce problème, <br> on peut mettre en place un contrôle de saisie pour vérifier que les données entrées au clavier correspondent bien à celles attendues par l’algorithme.
+        </p>
+        <section id="s1">
+          <li>
+            <h1>
+              La boucle Tant Que …. Faire :
+            </h1>
+          </li>
+          <p>
+            La boucle Tant que permet de répéter un traitement <br> tant que la condition est vraie.
+          </p>
+          <p><strong>Syntaxe :</strong></p>
+          <img style="margin-left: 6%" src="tanque.png" alt="" width="17%" /> <hr id="ver"><p id="pver">==> L’exécution de la boule dépend de la valeur de la condition. Si est vrai, l’algorithme exécute les instructions qui suivent, <br> jusqu’à ce qu’il  rencontre la ligne FinTantque . Il retourne ensuite sur la ligne du Tantque, procède au même examen, et ainsi de suite. <br> <br>
+            ==> La boucle ne s’arrête que lorsque prend la valeur fausse, et dans ce cas le programme  poursuit son exécution après  FinTantQue. <br> <br> <span class="remark"> <strong>Remarque: </strong>Si la  structure   TantQue  contient la condition ne devient jamais fausse. Le programme tourne <br> dans une boucle infinie et n’en sort plus. </span></p>
+        </section>
+        <section id="s2">
+          <li><h1>La boucle  Pour …. Faire</h1></li>
+          <p>La boucle  pour …. Faire  permet de répéter une liste d’instructions <br> un nombre connu de fois. </p>
+          <img style="margin-left: 2%;
+          margin-top: 1%;" src="pour.PNG" alt="" width="35%" height="10%" /><hr id="ver2"><p id="pver2">==> La variable compteur  est de type entier. Elle est initialisée par la valeur initiale, <br> le compteur augmente sa valeur de 1 automatiquement à  chaque tour de boucle  jusqu’à la valeur finale. <br> <br>
+          ==> Lorsque la variable compteur vaut la valeur finale, le traitement est exécuté une seule fois <br> puis le programme sort de la boucle. </p>
+        </section>
+        <section id="s3">
+          <li><h1>La  boucle  Répéter…jusqu’à </h1></li>
+          <p>Cette boucle permet de répéter une instruction jusqu’à ce <br> qu’une soit vrai.  </p>
+          <img style="margin-left: 3.5%;
+          margin-top: 1%;" src="repeter.PNG" alt="" width="15%" /><hr id="ver3"><p id="pver3">==> La liste d’instructions est exécutée, puis la condition est évaluée. <br> Si elle est fausse, le corps de la boucle est exécuté à nouveau puis la condition est réévaluée et si elle est  vraie, <br> le programme sort de la boucle et exécute l’instruction qui suit Jusqu’à. <br> <br>
+          <span class="remark"><strong>Remarque :</strong> Cette boucle ne s’utilise en général que pour des menus, elle est dangereuse car il n’y a pas <br> de vérification de la condition avant  d’y entrer. </span> </p>
+        </section>
+      </ol>
+    </span>
+      <span id="app">
+        <h1 style="margin-left: 1%;" >Applications :</h1>
+        <span id="ex1">
+          <p>
+            Ecrire un algorithme qui calcule la somme <br>  S = 1+2+3+4+…+ 10 utilisant la boucle tanque
+          </p>
+          <span id="correction">
+            <p style="display: block;">Si tu veux voir la correction cliquez sur cette button :<input style="display: block;" type="button" id="correc" value="Correction" onclick="voir1()" /></p>
+            <img id="pair" src="ext.PNG" alt="" width="20%" style="display: block;
+            margin-left: 3%;" />
+          </span>
+        </span>
+        <hr id="hr1">
+        <span id="ex2">
+          <p>
+            Ecrire un algorithme qui affiche la table de multiplication de 5.<br> Utilisant la boucle pour.
+          </p>
+          <span id="correction">
+            <p style="display: inline-block;">Si tu veux voir la correction cliquez sur cette button : <input style="display: inline-block;" type="button" id="correc" value="Correction" onclick="voir2()" /></p>
+            <img id="pair2" src="exp.PNG" alt="" width="59%" style="display: block;
+            margin-left: 3%;" />
+          </span>
+        </span>
+        <hr id="hr2">
+        <span id="ex3">
+          <p>
+            En utilisant  la boucle Répéter…..jusqu’à, <br> on écrit  un algorithme qui affiche Bonjour  10  fois.
+          </p>
+          <span id="correction">
+            <p style="display: inline-block;">Si tu veux voir la correction cliquez sur cette button : <input style="display: inline-block;" type="button" id="correc" value="Correction" onclick="voir3()" /></p>
+            <img id="pair3" src="exr.PNG" alt="" width="200px%" height="300px" style="display: block;
+            margin-left: 3%;" />
+          </span>
+        </span>
+        <hr id="test">
+      </span>
+      <span id="mainquiz">
+        <h2>Quiz:</h2>
+        <p style="font-size: 20px;">
+          Tu dois repondre au moin 3 reponses correctement pour acceder aux chapitre suivant ! :
+        </p>
+          <span id="quiz">
+            <span id="start">
+              <p id="instruc">Quelles boucles peuvent utiliser un compteur afin d'effectuer un nombre d'itérations connu à l'avance ?</p>
+              <input type="radio" name="tick 1" id="r1" />
+              <label for="r1"
+                >La boucle pour....faire</label
+              ><br />
+              <input type="radio" name="tick 1" id="r2" />
+              <label for="r2"
+                >La boucle Repeter jusqu’a</label
+              ><br />
+              <input type="radio" name="tick 1" id="r3" />
+              <label for="r3"
+                >La boucle TantQue</label
+              >
+              <p style="color:red;
+              text-shadow: 1px 1px 0.5px rgba(0, 0, 0, 0.267);
+              font-size: 30px;" id="Faux1"></p><br>
+              <p id="check1"></p>
+              <hr><br />
+              <p id="instruc"> La structure répétitive conditionnelle « répéter jusqu’à » permet de répéter...</p>
+              <input type="radio" name="tick 2" id="r4" />
+              <label for="r4"
+                >Un traitement tant que la condition et vérifiée</label
+              ><br />
+              <input type="radio" name="tick 2" id="r5" />
+              <label for="r5"
+                >Un événement</label
+              ><br />
+              <input type="radio" name="tick 2" id="r6" />
+              <label for="r6"
+                >Un traitement jusqu’à ce que la condition soit vérifiée</label
+              >
+              <p style="color:red;
+              text-shadow: 1px 1px 0.5px rgba(0, 0, 0, 0.267);
+              font-size: 30px;" id="Faux2"></p><br>
+              <p id="check2"></p>
+              <hr><br />
+              <p id="instruc">La structure répétitive conditionnelle « tant que » permet de répéter...</p>
+              <input type="radio" name="tick 3" id="r7" />
+              <label for="r7"
+                >Un traitement jusqu’à ce que la condition soit vérifiée</label
+              ><br />
+              <input type="radio" name="tick 3" id="r8" />
+              <label for="r8"
+                >Un traitement tant que la condition est vérifiee</label
+              ><br />
+              <input type="radio" name="tick 3" id="r9" />
+              <label for="r9"
+                >Indéfiniment une séquence d'instructions</label
+              >
+              <p style="color:red;
+              text-shadow: 1px 1px 0.5px rgba(0, 0, 0, 0.267);
+              font-size: 30px;" id="Faux3"></p><br>
+              <p id="check3"></p>
+              <hr><br />
+              <p id="instruc"> On suppose qu'on veut ecrire un algorithme pour verifier si une chaine alphabétique ou non, qu elle est la meuilleur choix du boucle ? </p>
+              <input type="radio" name="tick 4" id="r10" />
+              <label for="r10"
+                >La boucle Repeter jusqu’a</label
+              ><br />
+              <input type="radio" name="tick 4" id="r11" />
+              <label for="r11"
+                >La boucle pour....faire</label
+              ><br />
+              <input type="radio" name="tick 4" id="r12" />
+              <label for="r12"
+                >La boucle TantQue</label
+              >
+              <p style="color:red;
+              text-shadow: 1px 1px 0.5px rgba(0, 0, 0, 0.267);
+              font-size: 30px;" id="Faux4"></p><br>
+              <p id="check4"></p>
+              <hr><br />
+              <p id="instruc">Quelle est la probleme de dans ce algorithme ? :</p>
+              <img src="Screenshot_19.png" alt="" style="margin-left: 1%;" width="30%"><br>
+              <input type="radio" name="tick 5" id="r13" />
+              <label for="r13"
+                >La valeur de la variable s</label
+              ><br />
+              <input type="radio" name="tick 5" id="r14" />
+              <label for="r14"
+                >La valeur de la variable ok</label
+              ><br />
+              <input type="radio" name="tick 5" id="r15" />
+              <label for="r15"
+                >choix de la boucle</label
+              >
+              <p style="color:red;
+              text-shadow: 1px 1px 0.5px rgba(0, 0, 0, 0.267);
+              font-size: 30px;" id="Faux5"></p><br>
+              <p id="check5"></p>
+              <hr><br />
+              <p id="score"></p>
+              <input id="sumb1" type="button" onclick="verifie()" value="Check" />
+              <a href="index4.html"><input style="margin-left: 8%;" id="sumb2" type="button" value="Suivant" /></a>
+              <p id="fin1"></p> <input style="display: none;" id="reset" type="reset" onclick="reset()"  value="Reset" />
+              <p id="fin2"></p> <a href="chapitre3.html"><input style="display: none;" id="courr" type="button" onclick="reset()"  value="Cour" /></a>
+            </span>
+          </span>
+  </body>
+</html>

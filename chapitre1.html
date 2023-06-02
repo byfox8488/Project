@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="chap1.css" />
+    <script src="chap1.js"></script>
+  </head>
+  <body onload="none()">
+    <span id="introduction1">
+      <h1>Chapitre 1 : Base de l algorithme</h1>
+    </span>
+    <section id="progress">
+      <a href="index.html">L'accueil </a>===><a href="chapitre1.html"> Chapitre 1</a>
+    </section>
+    <nav>
+      <span id="navig">
+        <input type="button" value="Cours" id="btcour" onclick="display2()">
+        <input type="button" value="App et Quiz" id="btquiz" onclick="display()">
+        <span id="line"></span>
+      </span>
+    </nav>
+    <span id="introduction">
+      <ol>
+        <li>L'algorithme et la programmation</li>
+        <P>Tout problème à programmer doit être résolu d’abord sous forme  d’algorithme, puis converti en programme dans le langage de votre choix. En effet, un algorithme est indépendant du langage de programmation utilisé. 
+          Un programme est une suite d’instructions, écrit dans un langage de programmation, exécutées par ordinateur, permettant de traiter un problème et de renvoyer des résultats. Il représente la traduction d’un algorithme à l’aide d’un langage de programmation.
+          Le cycle de développement d’un programme (ou d’une application)  informatique peut  se résumer comme ça :</P>
+        <img id="proog" src="pprog.png" alt="">
+        <li>Structure générale d’un algorithme</li>
+        <p>Un algorithme est composé de trois principale:</p>
+        <ul>
+          <li >L’en tête :</li><p style="display: inline-block;">cette partie sert à donner un nom à l’algorithme. Elle est précédée par le mot Algorithme.</p>
+          <li >La partie déclarative :</li><p style="display: inline-block;">dans cette partie, on déclare les différents objets que l’algorithme utilise (Variables, constantes, etc).</p>
+          <li >Le corps de l’algorithme :</li><p style="display: inline-block;">cette partie  contient les instructions de l’algorithme. Elle est délimitée par les mots début et Fin. </p>
+        </ul>
+        <table id="tab">
+          <tr>
+            <th>Entête</th>
+            <th>Algorithme : Nom_Algortihme</th>
+          </tr>
+          <tr>
+            <td>partie déclarative</td>
+            <td>Varible : Nom:type <br> Constante : Nom=valeur</td>
+          </tr>
+          <tr>
+            <td>corps de l'algorithme</td>
+            <td>Début <br> Instruction 1 <br> Instruction 2 <br> .............. <br> .............. <br> Instruction n <br> Fin </td>
+          </tr>
+        </table>
+        <li>Les types de données</li>
+        <p>Il ya differant types de donnée dans l algorithmiques ce sont:</p>
+        <ul>
+          <li><strong> Type entier: </strong> sert à manipuler les nombres entiers positifs ou négatifs. Par exemple : 5, 20, -12 </li>
+          <li><strong> Type réel: </strong> sert à manipuler les nombres à virgule. Par exemple : 5, 2.1,    -1.2 …</li>
+          <li><strong> Type  caractère: </strong>sert à manipuler des caractères alphabétiques  et numériques. Par exemple :  "a",  "B " , "6"   …</li>
+          <li><strong> Type  chaîne: </strong>sert à manipuler des chaines de caractères  permettant de représenter des mot ou des phrases  comme :   "bonjour",   "Cours_5"    …</li>
+          <li><strong> Type booléen: </strong>utilise les expressions logiques. Il  n’y a que deux valeurs booléennes : Vrai et  faux</li>
+        </ul>
+        <p id="examp">Example:</p>
+        <p id="types">Variables a, b : entiers <br>
+          c : réel <br>
+          nom : chaine_caractères <br>
+          absent : booléen</p>
+        </p>
+      </ol>
+      <table id="tab1">
+        <tr>
+          <th>Type</th>
+          <th>Opérations</th>
+          <th>Symboles</th>
+          <th>Exemples</th>
+        </tr>
+        <tr>
+          <td rowspan="7">Entier</td>
+          <td>Addtion</td>
+          <td>+</td>
+          <td>2+5=7</td>
+        </tr>
+        <tr>
+          <td>Soustraction</td>
+          <td>-</td>
+          <td>8-5=3</td>
+        </tr>
+        <tr>
+          <td>Multiplication</td>
+          <td>*</td>
+          <td>2*4=8</td>
+        </tr>
+        <tr>
+          <td>Division</td>
+          <td>/</td>
+          <td>10/4=2.5</td>
+        </tr>
+        <tr>
+          <td>Division entier</td>
+          <td>Div</td>
+          <td>10 Div 4 = 2</td>
+        </tr>
+        <tr>
+          <td>Modulo</td>
+          <td>Mod</td>
+          <td>10 Mod 3 = 1</td>
+        </tr>
+        <tr>
+          <td>Comparaison</td>
+          <td> ≤ ≥ > < = ≠ </td>
+          <td>10 Mod 3 = 1</td>
+        </tr>
+        <tr>
+          <td>Charactere</td>
+          <td>Comparaison</td>
+          <td>≤ ≥ > < = ≠</td>
+          <td>"B"< "K" faux</td>
+        </tr>
+        <tr>
+          <td rowspan="2">Chaine</td>
+          <td>Concaténation</td>
+          <td>& +</td>
+          <td>"Med"+"Slimen"="MedSlimen"</td>
+        </tr>
+        <tr>
+          <td>Comparaison</td>
+          <td>≤ ≥ > < = ≠</td>
+          <td>"med"<"sm" vrai </td>
+        </tr>
+        <tr>
+          <td>Boolean</td>
+          <td>Logique</td>
+          <td>et non ou</td>
+          <td>non(7>1) faux</td>
+        </tr>
+      </table>
+    </span>
+    <span id="app">
+      <h2>Application:</h2>
+      <p>
+        Completer le tableaux suivant par (entier / boolean / chaine / charactere / réel):
+      </p>
+      <table id="tab2">
+        <tr>
+          <td>Object</td>
+          <td>Types</td>
+        </tr>
+        <tr>
+          <td>"Info"</td>
+          <td><input id="b1" class="app" type="text" height="100%"> <img id="red1" style="position: absolute;
+            margin-left: 1%;
+            display: none;" src="x.png" alt="" width="5%"><img id="v1" style="position: absolute;
+            margin-left: 1%;
+            display: none;" src="v.png" alt="" width="5%"></td>
+        </tr>
+        <tr>
+          <td>"b"</td>
+          <td><input id="b2"  class="app" type="text"><img id="red2" style="position: absolute;
+            margin-left: 1%;
+            display: none;" src="x.png" alt="" width="5%"> <img id="v2" style="position: absolute;
+            margin-left: 1%;
+            display: none;" src="v.png" alt="" width="5%"></td>
+        </tr>
+        <tr>
+          <td>"22"</td>
+          <td><input id="b3" class="app" type="text"><img id="red3" style="position: absolute;
+            margin-left: 1%;
+            display: none;" src="x.png" alt="" width="5%"> <img id="v3" style="position: absolute;
+            margin-left: 1%;
+            display: none;" src="v.png" alt="" width="5%"></td>
+        </tr>
+        <tr>
+          <td>ok=True</td>
+          <td><input id="b4" class="app" type="text"><img id="red4" style="position: absolute;
+            margin-left: 1%;
+            display: none;" src="x.png" alt="" width="5%"><img id="v4" style="position: absolute;
+            margin-left: 1%;
+            display: none;" src="v.png" alt="" width="5%"></td>
+        </tr>
+        <tr>
+          <td>24</td>
+          <td><input id="b5" class="app" type="text"><img id="red5" style="position: absolute;
+            margin-left: 1%;
+            display: none;" src="x.png" alt="" width="5%"><img id="v5" style="position: absolute;
+            margin-left: 1%;
+            display: none;" src="v.png" alt="" width="5%"></td>
+        </tr>
+        <tr>
+          <td>5.5</td>
+          <td><input id="b6" class="app" type="text"><img id="red6" style="position: absolute;
+            margin-left: 1%;
+            display: none;" src="x.png" alt="" width="5%"> <img id="v6" style="position: absolute;
+            margin-left: 1%;
+            display: none;" src="v.png" alt="" width="5%"></td>
+        </tr>
+      </table>
+      <input id="check" type="button" value="Check" onclick="check()">
+    </span>
+    <span id="mainquiz">
+      <h2>Quiz:</h2>
+      <p>
+        Tu dois repondre correctement au moin 3 de ce quiz pour acceder au next chapitre :
+      </p>
+      <span id="quiz">
+        <p>Quelle est le resultat dans chaque de ces quas ?:</p>
+        <img class="imquiz" src="a1.png" height="100px" width="250px" alt=""><br>
+        <input type="radio" name="tick 1" id="r1" />
+        <label for="r1">37</label><br />
+        <input type="radio" name="tick 1" id="r2" />
+        <label for="r2" >2215</label><br />
+        <input type="radio" name="tick 1" id="r3" />
+        <label for="r3">0</label>
+        <p style="color:red;
+        text-shadow: 1px 1px 0.5px rgba(0, 0, 0, 0.267);
+        font-size: 30px;" id="Faux1"></p><br>
+        <p id="check1"></p>
+        <hr><br />
+        <img class="imquiz" src="a2.png" height="100px" width="250px" alt=""><br>
+        <input type="radio" name="tick 2" id="r4" />
+        <label for="r4">"8210"</label><br />
+        <input type="radio" name="tick 2" id="r5" />
+        <label for="r5">92</label><br />
+        <input type="radio" name="tick 2" id="r6" />
+        <label for="r6">Erreur</label>
+        <p style="color:red;
+        text-shadow: 1px 1px 0.5px rgba(0, 0, 0, 0.267);
+        font-size: 30px;" id="Faux2"></p><br>
+        <p id="check2"></p>
+        <hr><br />
+        <img class="imquiz" src="a3.png" height="100px" width="250px" alt=""><br>
+        <input type="radio" name="tick 3" id="r7" />
+        <label for="r7" >"0210"</label><br />
+        <input type="radio" name="tick 3" id="r8" />
+        <label for="r8">12</label><br />
+        <input type="radio" name="tick 3" id="r9" />
+        <label for="r9">Erreur</label>
+        <p style="color:red;
+        text-shadow: 1px 1px 0.5px rgba(0, 0, 0, 0.267);
+        font-size: 30px;" id="Faux3"></p><br>
+        <p id="check3"></p>
+        <hr><br />
+        <img class="imquiz" src="a4.png" height="100px" width="250px" alt=""><br>
+        <input type="radio" name="tick 4" id="r10" />
+        <label for="r10">22.5</label><br />
+        <input type="radio" name="tick 4" id="r11" />
+        <label for="r11">10</label><br />
+        <input type="radio" name="tick 4" id="r12" />
+        <label for="r12">True</label>
+        <p style="color:red;
+        text-shadow: 1px 1px 0.5px rgba(0, 0, 0, 0.267);
+        font-size: 30px;" id="Faux4"></p><br>
+        <p id="check4"></p>
+        <hr><br />
+        <img class="imquiz" src="a5.png" height="100px" width="250px" alt=""><br>
+        <input type="radio" name="tick 5" id="r13" />
+        <label for="r13">6</label><br />
+        <input type="radio" name="tick 5" id="r14" />
+        <label for="r14">4.0</label ><br />
+        <input type="radio" name="tick 5" id="r15" />
+        <label for="r15" >4</label >
+        <p style="color:red;
+        text-shadow: 1px 1px 0.5px rgba(0, 0, 0, 0.267);
+        font-size: 30px;" id="Faux5"></p><br>
+        <p id="check5"></p>
+        <hr><br />
+        <p id="score"></p>
+        <input id="sumb1" type="button" onclick="verifie()" value="Check" />
+        <a href="index2.html"><input style="margin-left: 8%;" id="sumb2" type="button" value="Suivant" /></a>
+        <p id="fin1"></p> <input style="display: none;" id="reset" type="reset" onclick="reset()"  value="Reset" />
+        <p id="fin2"></p> <a href="chapitre1.html"><input style="display: none;" id="courr" type="button" onclick="reset()"  value="Cour" /></a>
+      </span>
+    </span>
+  </body>
+</html>

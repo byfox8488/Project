@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="chap2.css" />
+    <script src="chap2.js"></script>
+  </head>
+  <body onload="none()">
+    <span id="introduction">
+      <h1>Chapitre 2 : Les structures alternatives</h1>
+    </span>
+    <section id="progress">
+      <a href="index2.html">L'accueil </a>===><a href="chapitre2.html"> Chapitre 2</a>
+    </section>
+    <nav>
+      <span id="navig">
+        <input type="button" value="Cours" id="btcour" onclick="display2()">
+        <input type="button" value="App et Quiz" id="btquiz" onclick="display()">
+        <span id="line"></span>
+      </span>
+    </nav>
+    <main id="cour">
+      <ol>
+        <li>Introduction:</li>
+        <p>
+          Contrairement au traitement séquentiel, la structure alternative ou
+          conditionnelle permet d’exécuter ou non une série d’instructions selon
+          la valeur d’une condition.
+        </p>
+        <li>
+            La structure Si alors ……… sinon …… fin si ou Si alors ……… fin si
+        </li>
+        <p>
+          Une condition est une expression logique ou une variable logique
+          évaluée à Vrai ou faux. La condition est évaluée. Si elle est vraie,
+          la série d’instruction(s)1 est exécutée et l’ensemble d’instruction(s)
+          2 est ignoré, la machine sautera directement à la première instruction
+          située après Fin si. De même, au cas où la condition était fausse la
+          machine saute directement à la première ligne située après le Sinon et
+          exécute l’ensemble d’instruction2.
+        </p>
+        <img style="margin-left: 5%" src="Screenshot_11.png" alt="" />
+        <li>Structure à choix multiples</li>
+        <p>Cette  structure conditionnelle permet de choisir le traitement à effectuer en fonction  de la valeur ou de l’intervalle de valeurs d’une variable o d’une expression.</p>
+        <img style="margin-left: 10%;
+        margin-top: 1%;" src="selon.PNG" alt="" width="20%" height="10%" />
+    </main>
+    <span id="app">
+      <h2>Application :</h2>
+      <p>
+        Écrire un algorithme qui affiche si un nombre entier saisi au
+        clavier est pair ou impair :
+      </p>
+      <span id="correction">
+        <p>Si tu veux voir la correction cliquez sur cette button :</p>
+        <img id="finger" src="finger.png" alt="" width="2.5%" />
+        <input type="button" id="correc" value="Correction" onclick="voir()" />
+        <img id="pair" src="Screenshot_12.png" alt="" />
+      </span>
+    </span>
+    <span id="mainquiz">
+      <h2>Quiz:</h2>
+      <p>
+        Tu dois repondre au moin 3 reponses correctement pour acceder aux chapitre suivant :
+      </p>
+      <span id="quiz">
+        <hr>
+        <p id="instruc"> On suppose que i est egal a 3 , Qelle est le resultat de ce algorithme ?</p>
+        <img class="imquiz" src="Screenshot_13.png" height="200px" width="350px" alt=""><br>
+        <input type="radio" name="tick 1" id="r1" />
+        <label for="r1">True</label><br />
+        <input type="radio" name="tick 1" id="r2" />
+        <label for="r2">i>2</label><br />
+        <input type="radio" name="tick 1" id="r3" />
+        <label for="r3">Erreur</label>
+        <p style="color:red;
+        text-shadow: 1px 1px 0.5px rgba(0, 0, 0, 0.267);
+        font-size: 30px;" id="Faux1"></p><br>
+        <p id="check1"></p>
+        <hr><br />
+        <p id="instruc"> Quelle est le role de ce algorithme ?</p>
+        <img class="imquiz" src="Screenshot_14.png" height="200px" width="500px" alt=""><br>
+        <input type="radio" name="tick 2" id="r4" />
+        <label for="r4">Afficher la cin</label><br />
+        <input type="radio" name="tick 2" id="r5" />
+        <label for="r5">Verifer si la chaine est superieur au 8 chiffre ou non</label><br />
+        <input type="radio" name="tick 2" id="r6" />
+        <label for="r6">Verifer la chaine est egale au 8 characteres ou non</label>
+        <p style="color:red;
+        text-shadow: 1px 1px 0.5px rgba(0, 0, 0, 0.267);
+        font-size: 30px;" id="Faux2"></p><br>
+        <p id="check2"></p>
+        <hr><br />
+        <p id="instruc"> On suppose que n est egal a 16 , Qelle est le resultat de ce algorithme ?</p>
+        <img class="imquiz" src="Screenshot_15.png" height="200px" width="500px" alt=""><br>
+        <input type="radio" name="tick 3" id="r7" />
+        <label for="r7">"excellent travail"</label><br />
+        <input type="radio" name="tick 3" id="r8" />
+        <label for="r8">"Tu peux faire mieux"</label><br />
+        <input type="radio" name="tick 3" id="r9" />
+        <label for="r9">Erreur</label>
+        <p style="color:red;
+        text-shadow: 1px 1px 0.5px rgba(0, 0, 0, 0.267);
+        font-size: 30px;" id="Faux3"></p><br>
+        <p id="check3"></p>
+        <hr><br />
+        <p id="instruc"> D apres ce algorithme que est ce que on peux utiliser pour résoudre ce probleme </p>
+        <img class="imquiz" src="Screenshot_16.png" height="100px" width="1000px" alt=""><br>
+        <input type="radio" name="tick 4" id="r10" />
+        <label for="r10">Structure à choix multiples</label><br />
+        <input type="radio" name="tick 4" id="r11" />
+        <label for="r11">La structure Si alors … sinon  fin si ou Si alors ... fin si</label><br />
+        <input type="radio" name="tick 4" id="r12" />
+        <label for="r12">La Structure Repetitive</label>
+        <p style="color:red;
+        text-shadow: 1px 1px 0.5px rgba(0, 0, 0, 0.267);
+        font-size: 30px;" id="Faux4"></p><br>
+        <p id="check4"></p>
+        <hr><br />
+        <p id="instruc"> On suppose que n est egal a 6 , Quelle est le resultat de algorithme </p>
+        <img class="imquiz" src="Screenshot_17.png" height="350px" width="550px" alt=""><br>
+        <input type="radio" name="tick 5" id="r13" />
+        <label for="r13" > Mars</label><br />
+        <input type="radio" name="tick 5" id="r14" />
+        <label for="r14">December</label><br />
+        <input type="radio" name="tick 5" id="r15" />
+        <label for="r15">Juin</label>
+        <p style="color:red;
+        text-shadow: 1px 1px 0.5px rgba(0, 0, 0, 0.267);
+        font-size: 30px;" id="Faux5"></p><br>
+        <p id="check5"></p>
+        <hr><br />
+        <p id="score"></p>
+        <input id="sumb1" type="button" onclick="verifie()" value="Check" />
+        <a href="index3.html"><input style="margin-left: 8%;" id="sumb2" type="button" value="Suivant" /></a>
+        <p id="fin1"></p> <input style="display: none;" id="reset" type="reset" onclick="reset()"  value="Reset" />
+        <p id="fin2"></p> <a href="chapitre2.html"><input style="display: none;" id="courr" type="button" onclick="reset()"  value="Cour" /></a>
+      </span>
+    </span>
+  </body>
+</html>

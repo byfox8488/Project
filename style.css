@@ -1,0 +1,195 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-image: url(cadre.png);
+    background-repeat: no-repeat;
+    background-size:cover;
+    background-color: #181b2c;
+    font-family: 'Courier New', Courier, monospace;
+}
+a {
+    font-size: 25px;
+    text-decoration: none;
+    color: black;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+#t1 {
+    font-style:italic;
+    font-family:Arial, Helvetica, sans-serif;
+    font-size: larger;
+}
+#t2 {
+    font-style:italic;
+    font-family:Arial, Helvetica, sans-serif;
+    font-size: larger;
+}
+#start1 {
+    position: absolute;
+    top: 50%;
+    left: 20%;
+    color: aqua;
+}
+#prog {
+    font-size: 60px;
+    letter-spacing: 8px;
+    display: block;
+    color: darkorange;
+    margin-left: 32%;
+    margin-top: 3%;
+    text-transform: uppercase;
+    text-shadow: 1px 1px 1px black;
+}
+#prog2 {
+    position: absolute;
+    top: 12%;
+    font-size: 60px;
+    display: block;
+    color: darkorange;
+    margin-left: 20%;
+    text-shadow: 1px 1px 1px black;
+}
+#footer {
+    display: block;
+    color: whitesmoke;
+    margin-top: 34%;
+    margin-left: 35%;
+}
+iframe {
+    width: 75%;
+    position: absolute;
+    left: 20%;
+    top: 12%;
+    height: 340%;
+}
+#chap1 {
+    position: absolute;
+    left: 2%;
+    top: 30%;
+    width: 11%;
+    height: 35%;
+    box-shadow: 1px 2px 1px 1px black;
+    padding: 20px 25px;
+    border-radius: 10px;
+    font-weight: bolder;
+    background-color: aqua;
+    transition: all 0.6s;
+    color: black;
+    font-size: 25px;
+}
+#chap2 {
+    position: absolute;
+    pointer-events: none;
+    opacity: 0.5;
+    left: 20%;
+    top: 30%;
+    width: 11%;
+    height: 35%;
+    box-shadow: 1px 2px 1px 1px black;
+    padding: 20px 25px;
+    border-radius: 10px;
+    font-size: 25px;
+    font-weight: bolder;
+    background-color: aqua;
+    transition: all 0.6s;
+}
+#lock1 {
+    position: absolute;
+    width: 40%;
+    margin-top: 50%;
+    margin-left: 17%;
+    transition: all 2s;
+}
+#lock3 {
+    position: absolute;
+    width: 40%;
+    margin-top: 50%;
+    margin-left: 17%;
+    transition: all 2s;
+}
+#lock4 {
+    position: absolute;
+    width: 40%;
+    margin-top: 50%;
+    margin-left: 17%;
+    transition: all 2s;
+}
+#lock5 {
+    position: absolute;
+    width: 40%;
+    margin-top: 50%;
+    left: 30%;
+    transition: all 2s;
+}
+#chap3 {
+    position: absolute;
+    pointer-events: none;
+    opacity: 0.5;
+    left: 40%;
+    top: 30%;
+    width: 11%;
+    height: 35%;
+    box-shadow: 1px 2px 1px 1px black;
+    padding: 20px 25px;
+    border-radius: 10px;
+    font-weight: bolder;
+    font-size: 25px;
+    background-color: aqua;
+    transition: all 0.6s;
+}
+#chap4 {
+    position: absolute;
+    pointer-events: none;
+    opacity: 0.5;
+    left: 60%;
+    top: 30%;
+    width: 11%;
+    height: 35%;
+    box-shadow: 1px 2px 1px 1px black;
+    padding: 20px 25px;
+    border-radius: 10px;
+    font-weight: bolder;
+    font-size: 25px;
+    background-color: aqua;
+    transition: all 0.6s;
+}
+#final {
+    position: absolute;
+    pointer-events: none;
+    opacity: 0.5;
+    left: 80%;
+    top: 30%;
+    width: 11%;
+    height: 35%;
+    box-shadow: 1px 2px 1px 1px black;
+    padding: 20px 25px;
+    border-radius: 10px;
+    font-weight: bolder;
+    background-color: aqua;
+    transition: all 0.6s;
+}
+#chap1:hover {
+    transform: scale(1.1);
+    background-color: white;
+    opacity: 1;
+    cursor: pointer;
+}
+#chap2:hover{
+    transform:scale(1.1);
+    background-color: white;
+    cursor: pointer;
+}
+#chap3:hover{
+    transform:scale(1.1);
+    background-color: white;
+    cursor: pointer;
+}
+#chap4:hover{
+    transform:scale(1.1);
+    background-color: white;
+    cursor: pointer;
+}
+#final:hover{
+    transform:scale(1.1);
+    background-color: white;
+    cursor: pointer;
+}

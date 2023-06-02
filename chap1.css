@@ -1,0 +1,346 @@
+body {
+    background-size: cover;
+    background-color: rgb(226, 239, 255);
+}
+p {
+    font-size: 20px;
+    font-weight: bold;
+    margin: 10px;
+}
+a {
+    text-decoration: none;
+}
+#introduction1 {
+    display: block;
+    text-align: center;
+    font-style: italic;
+    font-weight: bolder;
+    text-transform: uppercase;
+    text-decoration: underline;
+    font-size: 23px;
+}
+#progress {
+    font-family:monospace;
+    top: 2%;
+    margin-bottom:  1%;
+    margin-left: 0.5%;
+    font-size: 17px;
+    font-weight: bold;
+}
+label{
+    box-shadow: 1px 2px 1px 0.5px black;
+    padding: 7px 4px;
+    display: inline-block;
+    width: 40%;
+    cursor: pointer;
+    margin: auto 6%;
+    text-align: center;
+    background-color: rgb(240, 145, 101);
+    box-shadow: 1px 1px 2px 1px;
+    border-radius: 10px;
+    font-size: 22px;
+    font-weight: bold;
+}
+#proog {
+    margin-top: 1%;
+    margin-bottom: 1%;
+    width: 60%;
+}
+#tab {
+    border: 3px solid black;
+    border-collapse: collapse;
+    box-shadow: 1px 1px 6.5px -1.5px black;
+    font-size: 20px;
+    width: 40%;
+    margin-top: 1.5%;
+    margin-bottom: 1%;
+}
+nav {
+    background-color: rgb(228, 247, 255);
+    padding: 2% 1%;
+    border-radius: 10px;
+    box-shadow: 2px 1px 3px 0.5px black;
+}
+#line {
+    display: block;
+    visibility: hidden;
+    position: absolute;
+    left: 27.1%;
+    top: 32%;
+    width: 7%;
+    border-bottom: 3px solid black;
+    transition: all 0.5s;
+}
+#btcour {
+    padding: 15px 30px;
+    box-shadow: 2px 1px 3px 0.5px black;
+    left: 50%;
+    top: 100%;
+    border-radius: 10px;
+    margin-left: 26%;
+    font-size: large;
+    font-weight: bold;
+    cursor: pointer;
+    background-color: rgba(202, 188, 63, 0.658);
+    transition: all 0.6s;
+    transform: scale(0.9);
+}
+#btquiz {
+    padding: 15px 30px;
+    box-shadow: 2px 1px 3px 0.5px black;
+    left: 50%;
+    top: 100%;
+    border-radius: 10px;
+    margin-left: 26%;
+    font-size: large;
+    font-weight: bold;
+    cursor: pointer;
+    background-color: rgb(226, 209, 57);
+    transition: all 0.6s;
+}
+#btcour:hover,#btquiz:hover {
+    transform: scale(1.02);
+}
+#home {
+    text-decoration: none;
+    padding: 15px 30px;
+    position: absolute;
+    border-radius: 10px;
+    font-size: large;
+    font-weight: bold;
+    cursor: pointer;
+    background-color: rgb(100, 198, 255);
+    transition: all 0.6s;
+}
+#introduction {
+    display: block;
+    margin-left: 1%;
+}
+ol li {
+    margin-left: 0%;
+    font-size: 32px;
+    font-weight: bolder;
+}
+ul li {
+    font-size: 20px;
+}
+#title {
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    text-decoration:underline;
+    text-align: center;
+    font-weight: bold;
+    font-size: 50px;
+}
+#foot {
+    display: block;
+    position: absolute;
+    top: 330%;
+    height: 20%;
+}
+#score {
+    display: block;
+    width: 60%;
+    margin-left: 90%;
+    font-size: 30px;
+}
+#fin2 {
+    position: absolute;
+    top: 112%;
+    width: 100%;
+    font-size: 25px;
+}
+#courr {
+    position: absolute;
+    border-radius: 10px;
+    top: 112%;
+    left: 45%;
+    width: 25%;
+    padding: 15px 30px;
+    margin-left: 60%;
+    font-size: large;
+    font-weight: bold;
+    cursor: pointer;
+    background-color: rgb(226, 125, 57);
+    transition: all 0.6s;
+}
+#sumb1 {
+    padding: 15px 30px;
+    position: absolute;
+    left: 170%;
+    top: 100%;
+    font-size: large;
+    font-weight: bold;
+    cursor: pointer;
+    background-color: rgb(226, 209, 57);
+    transition: all 0.6s;
+}
+#sumb1:hover{
+    transform: scale(1.01);
+}
+#sumb2 {
+    display: none;
+    padding: 15px 30px;
+    position: absolute;
+    left: 200%;
+    top: 100%;
+    font-size: large;
+    font-weight: bold;
+    cursor: pointer;
+    background-color: rgb(226, 139, 57);
+    transition: all 0.6s;
+}
+li {
+    font-size: large;
+    margin-bottom: 15px;
+}
+#examp {
+    margin-left: 270px;
+}
+#types {
+    margin-left: 300px;
+}
+#application {
+    display: block;
+    margin-left: 3%;
+}
+#mainquiz {
+    display: block;
+    margin-left: 3%;
+}
+#quiz {
+    margin-left: 4%;
+}
+#tab1 {
+    border: 3px solid black;
+    border-collapse: collapse;
+    box-shadow: 1px 1px 6.5px -1.5px black;
+    font-size: 20px;
+    width: 50%;
+    margin-left: 4%;
+    margin-top: 1.5%;
+    margin-bottom: 1%;
+}
+#tab2 {
+    position: relative;
+    left: 50px;
+    box-shadow: 2px 3px 8.5px black;
+    border: 3px solid black;
+    border-collapse: collapse;
+    font-size: 20px;
+    width: 40%;
+    margin-left: 30px;
+}
+#check {
+    padding: 15px 30px;
+    margin-left: 60%;
+    font-size: large;
+    font-weight: bold;
+    cursor: pointer;
+    background-color: rgb(226, 209, 57);
+    transition: all 0.6s;
+}
+tr,td,th {
+    text-align: center;
+    font-weight: bold;
+    padding: 5px;
+    border: 3px solid black;
+}
+.app {
+    width: 80%;
+    padding: 5px 5px;
+}
+.imquiz {
+    border-radius: 10px;
+    margin-left: 40px;
+    margin-bottom: 20px;
+}
+input[type=radio]{
+    margin-left: 30px;
+    margin-bottom: 20px;
+}
+#quiz {
+    position: absolute;
+    left: 40px;
+}
+hr {
+    width: 100%;
+}
+#check1 {
+    position: absolute;
+    top: 10%;
+    left: 120%;
+    width: 100%;
+}
+#Faux1 {
+    position: absolute;
+    top: 5%;
+    left: 120%;
+    width: 100%;
+}
+#check2 {
+    position: absolute;
+    top: 48%;
+    left: 120%;
+    width: 100%;
+}
+#Faux2 {
+    position: absolute;
+    top: 42%;
+    left: 120%;
+    width: 100%;
+}
+#check3 {
+    position: absolute;
+    top: 29%;
+    left: 120%;
+    width: 140%;
+}
+#Faux3 {
+    position: absolute;
+    top: 23%;
+    left: 120%;
+    width: 100%;
+}
+#check4 {
+    position: absolute;
+    top: 68%;
+    left: 120%;
+    width: 140%;
+}
+#Faux4 {
+    position: absolute;
+    top: 63%;
+    left: 120%;
+    width: 100%;
+}
+#check5 {
+    position: absolute;
+    top: 85%;
+    left: 120%;
+    width: 140%;
+}
+#Faux5 {
+    position: absolute;
+    top: 80%;
+    left: 120%;
+    width: 100%;
+}
+#fin1 {
+    position: absolute;
+    left: 0%;
+    top: 107%;
+    width: 200%;
+    font-size: 25px;
+    font-weight: bold;
+}
+#reset {
+    position: absolute;
+    left: 200%;
+    top: 107%;
+    padding: 10px 25px;
+    font-size: large;
+    font-weight: bold;
+    cursor: pointer;
+    background-color: rgb(68, 118, 255);
+    transition: all 0.6s;
+}

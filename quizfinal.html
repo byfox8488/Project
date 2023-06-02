@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="final.css" />
+    <script src="final.js"></script>
+  </head>
+  <body onload="none()">
+    <span id="introduction">
+      <h1>Quiz Final</h1>
+    </span>
+    <section id="innt">
+      <section id="progress">
+        <a href="index4.html">L'accueil </a>===><a href="chapitre4.html">
+          Quiz final
+        </a>
+      </section>
+      <p id="int">
+        Dans ce quiz vous serez testé sur tous les chapitres précédents
+        confondus !
+      </p>
+      <h2 style="font-size: 30px; margin-left: 2%">Quiz:</h2>
+      <p
+        style="font-size: 30px; font-weight: bold; margin-left: 3%; width: 97%"
+      >
+        Bonne chance ! :
+      </p>
+    </section>
+    <span id="quiz">
+      <hr />
+      <img id="pos" src="ques.png" width="20%" alt="" />
+      <span id="start">
+        <p id="instruc">Qu'est-ce que un algorithme ?</p>
+        <section id="first">
+          <input type="radio" name="tick 1" id="r1" />
+          <label id="opt1" style="cursor: pointer" for="r1"
+            >Une list ordonnée d'instruction permettant d'effectuer une tache,de
+            resoudre un probléme</label
+          >
+          <input type="radio" name="tick 1" id="r2" />
+          <label style="cursor: pointer" for="r2"
+            >Une programme informatique</label
+          >
+          <input type="radio" name="tick 1" id="r3" />
+          <label style="cursor: pointer" for="r3">Type de données</label>
+          <p class="vouf" id="Faux1"></p>
+          <br />
+          <p id="check1"></p>
+        </section>
+        <hr />
+        <br />
+        <p id="instruc">Que signifie "affecter une valeur a une variable" ?</p>
+        <input type="radio" name="tick 2" id="r4" />
+        <label style="cursor: pointer" for="r4"
+          >Donner la valeur 1 a cette variable</label
+        >
+        <input type="radio" name="tick 2" id="r5" />
+        <label style="cursor: pointer" for="r5"
+          >Donner la valeur 0 a cette variable
+        </label>
+        <input type="radio" name="tick 2" id="r6" />
+        <label style="cursor: pointer" for="r6"
+          >Donner une valeur a cette variable</label
+        >
+        <p class="vouf" id="Faux2"></p>
+        <br />
+        <p id="check2"></p>
+        <hr />
+        <br />
+        <p id="instruc">Qu'est-ce une boucle itérative ?</p>
+        <input type="radio" name="tick 3" id="r7" />
+        <label style="cursor: pointer" for="r7"
+          >La répétition d'une instruction ( ou un groupe d'instruction ) un
+          nombre de fois donné</label
+        >
+        <input type="radio" name="tick 3" id="r8" />
+        <label style="cursor: pointer" for="r8"
+          >La répétition d'une instruction ( ou un groupe d'instruction ) tanque
+          la condition est verifié</label
+        >
+        <input type="radio" name="tick 3" id="r9" />
+        <label style="cursor: pointer" for="r9"
+          >La répétition d'une instruction ( ou un groupe d'instruction ) deux
+          fois</label
+        >
+        <p class="vouf" id="Faux3"></p>
+        <br />
+        <p id="check3"></p>
+        <hr />
+        <br />
+        <p id="instruc">Que signifie "incrémenter le compteur" ?</p>
+        <input type="radio" name="tick 4" id="r10" />
+        <label style="cursor: pointer" for="r10">Supprimer le compteur</label>
+        <input type="radio" name="tick 4" id="r11" />
+        <label style="cursor: pointer" style="cursor: pointer" for="r11"
+          >Reinitialiser le compteur</label
+        >
+        <input type="radio" name="tick 4" id="r12" />
+        <label style="cursor: pointer" for="r12">Augmenter sa valeur</label>
+        <p class="vouf" id="Faux4"></p>
+        <br />
+        <p id="check4"></p>
+        <hr />
+        <br />
+        <p id="instruc">Qu'elle est le resultat de ce algorithme</p>
+        <br />
+        <img id="imquiz" src="func.png" alt="" height="220px" width="370px" />
+        <input type="radio" name="tick 5" id="r13" />
+        <label style="cursor: pointer" for="r13"> -1.2</label>
+        <input type="radio" name="tick 5" id="r14" />
+        <label style="cursor: pointer" for="r14">1</label>
+        <input type="radio" name="tick 5" id="r15" />
+        <label style="cursor: pointer" for="r15">0 </label>
+        <p class="vouf" id="Faux5"></p>
+        <br />
+        <p id="check5"></p>
+        <hr />
+        <br />
+        <p id="score"></p>
+        <p id="prf">1</p>
+        <input id="sumb1" type="button" onclick="verifie()" value="Check" />
+        <a href="index4.html"
+          ><input
+            style="margin-left: 8%"
+            id="sumb2"
+            type="button"
+            value="Suivant"
+        /></a>
+        <p id="fin1"></p>
+        <input
+          style="display: none"
+          id="reset"
+          type="reset"
+          onclick="reset()"
+          value="Reset"
+        />
+        <p id="fin2"></p>
+        <a href="chapitre4.html"
+          ><input
+            style="display: none"
+            id="courr"
+            type="button"
+            onclick="reset()"
+            value="Cour"
+        /></a>
+      </span>
+    </span>
+  </body>
+</html>

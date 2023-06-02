@@ -1,0 +1,339 @@
+body {
+    background-color: rgb(236, 241, 255);
+    padding: 0;
+    margin: 0;
+}
+nav {
+    background-color: beige;
+    padding: 2% 1%;
+    border-radius: 10px;
+    box-shadow: 2px 1px 3px 0.5px black;
+}
+a {
+    text-decoration: none;
+}
+#progress {
+    font-family:monospace;
+    top: 2%;
+    margin-bottom:  1%;
+    margin-left: 0.5%;
+    font-size: 17px;
+    font-weight: bold;
+}
+#line {
+    display: block;
+    position: absolute;
+    visibility: hidden;
+    left: 26.9%;
+    top: 32%;
+    width: 7%;
+    border-bottom: 3px solid black;
+    transition: all 0.5s;
+}
+label{
+    box-shadow: 1px 2px 1px 0.5px black;
+    padding: 7px 4px;
+    display: inline-block;
+    width: 40%;
+    cursor: pointer;
+    margin: auto 6%;
+    text-align: center;
+    background-color: rgb(240, 145, 101);
+    box-shadow: 1px 1px 2px 1px;
+    border-radius: 10px;
+    font-size: 22px;
+    font-weight: bold;
+}
+#btcour {
+    padding: 15px 30px;
+    box-shadow: 2px 1px 3px 0.5px black;
+    left: 50%;
+    top: 100%;
+    border-radius: 10px;
+    margin-left: 26%;
+    font-size: large;
+    font-weight: bold;
+    cursor: pointer;
+    background-color: rgba(202, 188, 63, 0.658);
+    transition: all 0.6s;
+    transform: scale(0.9);
+}
+#btquiz {
+    padding: 15px 30px;
+    box-shadow: 2px 1px 3px 0.5px black;
+    left: 50%;
+    top: 100%;
+    border-radius: 10px;
+    margin-left: 26%;
+    font-size: large;
+    font-weight: bold;
+    cursor: pointer;
+    background-color: rgb(226, 209, 57);
+    transition: all 0.6s;
+}
+#introduction {
+    display: block;
+    text-align: center;
+    font-style: italic;
+    font-weight: bolder;
+    text-transform: uppercase;
+    text-decoration: underline;
+    font-size: 23px;
+}
+table {
+    border: 3px solid black;
+    border-collapse: collapse;
+    font-size: 20px;
+    width: 60%;
+    box-shadow: 2px 2px 6px 0px black;
+    height: 250px;
+    margin-left: 4%;
+    margin-bottom: 3%;
+
+}
+#rec {
+    text-align: center;
+}
+tr,td,th {
+    border: 3px solid black;
+    font-weight: bold;
+    font-size: 20px;
+    padding: 20px 20px;
+}
+ul {
+    margin: 0;
+    padding: 0;
+}
+ol li {
+    margin-left: 1%;
+    font-size: 32px;
+    font-weight: bolder;
+}
+ul li {
+    font-size: 20px;
+}
+p {
+    font-size: 20px;
+    font-weight: 500;
+}
+#back {
+    background-color: antiquewhite;
+}
+#ex1 {
+    margin-left: 3%;
+}
+.db {
+    margin-left: 1%;
+}
+.rp {
+    margin-left: 4%;
+}
+.en {
+    margin-left: 10%;
+}
+#app1 {
+    margin-top: 4%;
+    font-size: 30px;
+}
+#entry1 {
+    background-color:rgb(236, 241, 255) ;
+    display: inline-block;
+    border-radius: 10px;
+    height: 30px;
+    font-weight: bold;
+    font-size: 20px;
+    border: none;
+}
+#entry2 {
+    background-color:rgb(236, 241, 255) ;
+    display: inline-block;
+    border-radius: 10px;
+    height: 30px;
+    font-weight: bold;
+    font-size: 20px;
+    border: none;
+}
+#entry3 {
+    background-color:rgb(236, 241, 255) ;
+    display: inline-block;
+    border-radius: 10px;
+    height: 30px;
+    font-weight: bold;
+    font-size: 20px;
+    border: none;
+}
+#entry4 {
+    background-color:rgb(236, 241, 255) ;
+    display: inline-block;
+    border-radius: 10px;
+    height: 30px;
+    font-weight: bold;
+    font-size: 20px;
+    border: none;
+}
+#app2 {
+    position: absolute;
+    top: 55%;
+    left: 50%;
+    font-size: 30px;
+}
+#mainquiz {
+    position: absolute;
+    top: 110%;
+}
+#cut {
+    rotate: 90deg;
+    width: 24%;
+    position: absolute;
+    left: 30%;
+    top: 76%;
+}
+#kk {
+    margin-left: 1%;
+    font-size: 30px;
+}
+#sumb {
+    padding: 15px 30px;
+    position: absolute;
+    left: 39%;
+    top: 103%;
+    font-size: large;
+    font-weight: bold;
+    cursor: pointer;
+    background-color: rgb(57, 226, 212);
+    transition: all 0.6s;
+}
+#sumb:hover{
+    transform: scale(1.01);
+}
+#sumb1 {
+    padding: 17px 35px;
+    position: absolute;
+    left: 50%;
+    top: 99%;
+    font-size: large;
+    font-weight: bold;
+    cursor: pointer;
+    background-color: rgb(226, 209, 57);
+    transition: all 0.6s;
+}
+#instruc {
+    font-size: 27px;
+    font-weight: bold;
+}
+#quiz {
+    display: block;
+    margin-left: 5%;
+}
+#reset {
+    position: absolute;
+    left: 75%;
+    top: 103%;
+    padding: 10px 25px;
+    font-size: large;
+    font-weight: bold;
+    cursor: pointer;
+    background-color: rgb(68, 118, 255);
+    transition: all 0.6s;
+}
+#fin1 {
+    position: absolute;
+    left: 2%;
+    top: 102%;
+    width: 99%;
+    font-size: 25px;
+    font-weight: bold;
+}
+#score {
+    display: block;
+    font-weight: bold;
+    width: 60%;
+    margin-left: 50%;
+    font-size: 30px;
+}
+#fin2 {
+    position: absolute;
+    top: 105%;
+    width: 100%;
+    font-size: 25px;
+}
+#courr {
+    position: absolute;
+    border-radius: 10px;
+    top: 105.5%;
+    left: -17%;
+    width: 11%;
+    padding: 15px 25px;
+    margin-left: 60%;
+    font-size: large;
+    font-weight: bold;
+    cursor: pointer;
+    background-color: rgb(226, 125, 57);
+    transition: all 0.6s;
+}
+#sumb2 {
+    display: none;
+    padding: 17px 35px;
+    position: absolute;
+    left: 70%;
+    top: 99%;
+    font-size: large;
+    font-weight: bold;
+    cursor: pointer;
+    background-color: rgb(226, 139, 57);
+    transition: all 0.6s;
+}
+input[type="radio"],label{
+    margin-bottom: 2%;
+    margin-top: 1%;
+    margin-left: 3%;
+    font-size: 20px;
+}
+#v1 {
+    position: absolute;
+    left: -0.5%;
+    margin-left: 1%;
+    display: none;
+}
+#red1 {
+    position: absolute;
+    left: -0.5%;
+    margin-left: 1%;
+    display: none;
+}
+#v2 {
+    position: absolute;
+    left: -7%;
+    margin-left: 1%;
+    display: none;
+}
+#red2 {
+    position: absolute;
+    left: -7%;
+    margin-left: 1%;
+    display: none;
+}
+#v3 {
+    position: absolute;
+    left: 100%;
+    margin-left: 1%;
+    display: none;
+}
+#red3 {
+    position: absolute;
+    left: 100%;
+    margin-left: 1%;
+    display: none;
+}
+#v4 {
+    position: absolute;
+    left: -7%;
+    margin-left: 1%;
+    display: none;
+}
+#red4 {
+    position: absolute;
+    left: -7%;
+    margin-left: 1%;
+    display: none;
+}
